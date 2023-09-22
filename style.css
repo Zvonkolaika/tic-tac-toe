@@ -1,0 +1,53 @@
+body {
+    background-color: #323232; /* Background color for the entire page */
+    margin: o;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid white; /* Border style for each cell */
+    background-color: #323232; /* Background color for each cell */
+    color: white; /* Text color for each cell */
+    font-family: 'Open Sans', sans-serif; /* Font style for each cell */
+}
+
+tr:first-child td {
+    border-top: none; /* Remove top border for the first row */
+}
+
+tr:last-child td {
+    border-bottom: none; /* Remove bottom border for the last row */
+}
+
+td:first-child {
+    border-left: none; /* Remove left border for the first cell in each row */
+}
+
+td:last-child {
+    border-right: none; /* Remove right border for the last cell in each row */
+}
+
+td.circle:before {
+    content: '\25EF'; /* Circle character */
+    color: #00B0F0; /* Color for the circle */
+}
+
+td.cross:before {
+    content: '\2715'; /* Cross character */
+    color: #FFC000; /* Color for the cross */
+}
