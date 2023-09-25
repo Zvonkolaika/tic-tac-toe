@@ -1,6 +1,6 @@
 body {
     background-color: #323232; /* Background color for the entire page */
-    margin: o;
+    margin: 0;
 }
 
 h1 {
@@ -24,6 +24,11 @@ td {
     background-color: #323232; /* Background color for each cell */
     color: white; /* Text color for each cell */
     font-family: 'Open Sans', sans-serif; /* Font style for each cell */
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: rgba(253, 253, 253, 0.3);
 }
 
 tr:first-child td {
@@ -40,14 +45,4 @@ td:first-child {
 
 td:last-child {
     border-right: none; /* Remove right border for the last cell in each row */
-}
-
-td.circle:before {
-    content: '\25EF'; /* Circle character */
-    color: #00B0F0; /* Color for the circle */
-}
-
-td.cross:before {
-    content: '\2715'; /* Cross character */
-    color: #FFC000; /* Color for the cross */
 }
