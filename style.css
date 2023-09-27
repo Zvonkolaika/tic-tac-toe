@@ -46,3 +46,39 @@ td:first-child {
 td:last-child {
     border-right: none; /* Remove right border for the last cell in each row */
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add styles for the restart button */
+#restartButton {
+    margin: 20px; 
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restartButton:hover {
+    background-color: #45a049; /* Darker color on hover */
+}
+
+@media only screen and (max-width: 600px) {
+   
+    svg{
+        width: 81%;
+        height: 64%;
+    }
+
+    #restartButton {
+        margin: 100px; /* Center the button horizontally */
+        padding: 10px 20px;
+    }
+  }
